@@ -19,7 +19,8 @@ class CreateListingsTable extends Migration
             $table->string('title');
             $table->string('slug');
             $table->string('company');
-            $table->string('location')->nullable();
+            $table->string('location');
+            $table->string('logo')->nullable();
             $table->boolean('is_highlighted')->default(false);
             $table->boolean('is_active')->default(true);
             $table->text('content');
