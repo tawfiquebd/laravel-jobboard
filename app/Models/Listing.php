@@ -14,6 +14,10 @@ class Listing extends Model
 
     protected $guarded = [];
 
+    public function getRouteKeyName()
+    {
+        return 'slug';
+    }
 
     // A listing has multiple clicks
     public function clicks() {
